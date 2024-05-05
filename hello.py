@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 
 from pprint import pprint as pprint
+
 greetings: str = "Hello World"
-number = 100_000
-number_simple = 100
-decimal = 100.1
-complex = 8j
+NUMBER = 100_000
+NUMBER_SIMPLE = 100
+DECIMAL = 100.1
+COMPLEX = 8j
 seq = ["bla",1]
 tuple = (1,1,1)
 range = range(1,1000)
-dict = {"a": number}
-set  = {1,1,2,2,3,4}
+dict: dict= {"a": NUMBER}
+set: set  = {1,1,2,2,3,4}
 frozenset = frozenset({1,1,1,2,2,3})
 boolean = True
 bytes = bytes(0)
@@ -18,10 +19,12 @@ bytearray = bytearray(0)
 memoryview  = memoryview (bytes)
 
 pprint (type(greetings))
-pprint (type(number))
-pprint (type(number_simple ))
-pprint (type(decimal))
+pprint (type(NUMBER))
+pprint (type(NUMBER_SIMPLE))
+pprint (type(DECIMAL))
 pprint (type(complex))
+
+
 pprint (type(seq))
 pprint (type(tuple))
 pprint (type(range))
@@ -34,8 +37,13 @@ pprint (type(bytearray))
 pprint (type(memoryview))
 pprint (type(None))
 
-pprint (float(number)  + float(decimal))
+pprint (float(NUMBER)  + float(DECIMAL))
 
-pprint (int(number)  + int(decimal))
-pprint (int(number_simple)  + int(decimal))
-pprint (greetings + str(number))
+pprint (int(NUMBER)  + int(DECIMAL))
+pprint (int(NUMBER_SIMPLE)  + int(DECIMAL))
+pprint (greetings + str(NUMBER))
+
+
+def function():
+    pprint ("lsp test")
+
